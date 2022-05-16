@@ -3,7 +3,7 @@ const router = express.Router()
 const auth = require('../middleware/auth')
 const UserModel = require('../models/user')
 
-// Registration Router
+
 router.post('/register', async (req, res) => {
 
     const userDoc = new UserModel(req.body);
